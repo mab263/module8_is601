@@ -1,7 +1,13 @@
 venv/
+app.log
 __pycache__/
 *.pyc
 .DS_Store
 .coverage
 .pytest_cache
-htmlcov
+htmlcovvenv/
+venv311/
+app.log
+__pycache__/
+.pytest_cache/
+.coverage
