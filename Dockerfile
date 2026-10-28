@@ -15,6 +15,7 @@ RUN apt-get update && \
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip uninstall -y pip setuptools wheel || true
 
 COPY . .
 RUN chown -R appuser:appgroup /app
