@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         run: |
           mkdir -p test-results
-          pytest tests/unit/ --cov=app --junitxml=test-results/junit.xml
+          pytest tests/unit/ --cov=app.operations.operations --cov-report=term-missing --junitxml=test-results/junit.xml
           pytest tests/integration/
           pytest tests/e2e/
 
