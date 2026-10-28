@@ -297,7 +297,7 @@
                           
                         - resultElement.innerText: Updates the text inside the result <div> to display the error message.
                     */
-                    resultElement.innerText = 'Error: ' + data.error;
+                    resultElement.innerText = 'Error: ' + (data.detail || data.error || 'Request failed');
                 }
             } catch (error) {
                 /*
